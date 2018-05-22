@@ -1,0 +1,4 @@
+framework module UIImage_FBLAdditionsTestHelpers {
+    umbrella header "UIImage+FBLAdditionsTestHelpers.h"
+    export *
+}

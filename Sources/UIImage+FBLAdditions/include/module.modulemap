@@ -1,0 +1,4 @@
+module UIImage_FBLAdditions {
+    umbrella header "UIImage+FBLAdditions.h"
+    export *
+}

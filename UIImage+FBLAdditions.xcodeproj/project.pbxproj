@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0371B5E220B3A68E00C75E5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0371B5E120B3A68E00C75E5D /* CoreGraphics.framework */; };
+		0371B5E420B3A69C00C75E5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0371B5E320B3A69C00C75E5D /* UIKit.framework */; };
+		0371B5E620B3A6AF00C75E5D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0371B5E520B3A6AF00C75E5D /* CoreImage.framework */; };
+		0371B5E820B3A71700C75E5D /* UIImage+FBLAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* UIImage+FBLAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		038115C820B652BA007D5883 /* UIImage+FBLAdditionsTestHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 038115B820B65252007D5883 /* UIImage+FBLAdditionsTestHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		038115C920B652C0007D5883 /* UIImage+FBLAdditionsTestHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 038115B920B65252007D5883 /* UIImage+FBLAdditionsTestHelpers.m */; };
+		038115CC20B652E5007D5883 /* UIImage_FBLAdditions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "UIImage+FBLAdditions::UIImage+FBLAdditions::Product" /* UIImage_FBLAdditions.framework */; };
+		038115D120B65783007D5883 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0371B5E320B3A69C00C75E5D /* UIKit.framework */; };
+		038115D220B65791007D5883 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0371B5E120B3A68E00C75E5D /* CoreGraphics.framework */; };
+		038115DC20B66030007D5883 /* UIImage_FBLAdditions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "UIImage+FBLAdditions::UIImage+FBLAdditions::Product" /* UIImage_FBLAdditions.framework */; };
+		038115E220B662F0007D5883 /* UIImage+FBLAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0371B5EF20B6514D00C75E5D /* UIImage+FBLAdditionsTests.m */; };
+		038115E320B66335007D5883 /* UIImage_FBLAdditionsTestHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038115C620B65296007D5883 /* UIImage_FBLAdditionsTestHelpers.framework */; };
+		038115E420B6633A007D5883 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0371B5E120B3A68E00C75E5D /* CoreGraphics.framework */; };
+		038115E520B6633E007D5883 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0371B5E320B3A69C00C75E5D /* UIKit.framework */; };
+		038115E620B66356007D5883 /* small.png in Resources */ = {isa = PBXBuildFile; fileRef = 038115B520B65229007D5883 /* small.png */; };
+		038115E720B66356007D5883 /* small90.png in Resources */ = {isa = PBXBuildFile; fileRef = 038115AF20B65229007D5883 /* small90.png */; };
+		038115E820B66356007D5883 /* small180.png in Resources */ = {isa = PBXBuildFile; fileRef = 038115B020B65229007D5883 /* small180.png */; };
+		038115E920B66356007D5883 /* small180FlippedHorizontally.png in Resources */ = {isa = PBXBuildFile; fileRef = 038115B120B65229007D5883 /* small180FlippedHorizontally.png */; };
+		038115EA20B66356007D5883 /* smallFlippedHorizontally.png in Resources */ = {isa = PBXBuildFile; fileRef = 038115B320B65229007D5883 /* smallFlippedHorizontally.png */; };
+		038115EB20B66356007D5883 /* smallFlippedVertically.png in Resources */ = {isa = PBXBuildFile; fileRef = 038115B220B65229007D5883 /* smallFlippedVertically.png */; };
+		038115EC20B66356007D5883 /* smallMinus90.png in Resources */ = {isa = PBXBuildFile; fileRef = 038115B420B65229007D5883 /* smallMinus90.png */; };
+		OBJ_26 /* UIImage+FBLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* UIImage+FBLAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		038115CD20B652F7007D5883 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "UIImage+FBLAdditions::UIImage+FBLAdditions";
+			remoteInfo = "UIImage+FBLAdditions";
+		};
+		038115DD20B66030007D5883 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "UIImage+FBLAdditions::UIImage+FBLAdditions";
+			remoteInfo = "UIImage+FBLAdditions";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0371B5E120B3A68E00C75E5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0371B5E320B3A69C00C75E5D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0371B5E520B3A6AF00C75E5D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		0371B5E920B3A74D00C75E5D /* framework.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = framework.modulemap; sourceTree = "<group>"; };
+		0371B5EF20B6514D00C75E5D /* UIImage+FBLAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FBLAdditionsTests.m"; sourceTree = "<group>"; };
+		038115AF20B65229007D5883 /* small90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small90.png; sourceTree = "<group>"; };
+		038115B020B65229007D5883 /* small180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small180.png; sourceTree = "<group>"; };
+		038115B120B65229007D5883 /* small180FlippedHorizontally.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small180FlippedHorizontally.png; sourceTree = "<group>"; };
+		038115B220B65229007D5883 /* smallFlippedVertically.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallFlippedVertically.png; sourceTree = "<group>"; };
+		038115B320B65229007D5883 /* smallFlippedHorizontally.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallFlippedHorizontally.png; sourceTree = "<group>"; };
+		038115B420B65229007D5883 /* smallMinus90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallMinus90.png; sourceTree = "<group>"; };
+		038115B520B65229007D5883 /* small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small.png; sourceTree = "<group>"; };
+		038115B820B65252007D5883 /* UIImage+FBLAdditionsTestHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FBLAdditionsTestHelpers.h"; sourceTree = "<group>"; };
+		038115B920B65252007D5883 /* UIImage+FBLAdditionsTestHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FBLAdditionsTestHelpers.m"; sourceTree = "<group>"; };
+		038115C620B65296007D5883 /* UIImage_FBLAdditionsTestHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIImage_FBLAdditionsTestHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		038115CF20B65323007D5883 /* framework.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = framework.modulemap; sourceTree = "<group>"; };
+		038115D720B6602F007D5883 /* UIImage_FBLAdditionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIImage_FBLAdditionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_11 /* UIImage+FBLAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FBLAdditions.h"; sourceTree = "<group>"; };
+		OBJ_9 /* UIImage+FBLAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FBLAdditions.m"; sourceTree = "<group>"; };
+		"UIImage+FBLAdditions::UIImage+FBLAdditions::Product" /* UIImage_FBLAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIImage_FBLAdditions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		038115BD20B65296007D5883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				038115D220B65791007D5883 /* CoreGraphics.framework in Frameworks */,
+				038115D120B65783007D5883 /* UIKit.framework in Frameworks */,
+				038115CC20B652E5007D5883 /* UIImage_FBLAdditions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038115D420B6602F007D5883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038115E520B6633E007D5883 /* UIKit.framework in Frameworks */,
+				038115E420B6633A007D5883 /* CoreGraphics.framework in Frameworks */,
+				038115E320B66335007D5883 /* UIImage_FBLAdditionsTestHelpers.framework in Frameworks */,
+				038115DC20B66030007D5883 /* UIImage_FBLAdditions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				0371B5E220B3A68E00C75E5D /* CoreGraphics.framework in Frameworks */,
+				0371B5E620B3A6AF00C75E5D /* CoreImage.framework in Frameworks */,
+				0371B5E420B3A69C00C75E5D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0371B5E020B3A68D00C75E5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0371B5E520B3A6AF00C75E5D /* CoreImage.framework */,
+				0371B5E320B3A69C00C75E5D /* UIKit.framework */,
+				0371B5E120B3A68E00C75E5D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0371B5EA20B6514D00C75E5D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0371B5EB20B6514D00C75E5D /* UIImage+FBLAdditionsTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0371B5EB20B6514D00C75E5D /* UIImage+FBLAdditionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0371B5EF20B6514D00C75E5D /* UIImage+FBLAdditionsTests.m */,
+			);
+			path = "UIImage+FBLAdditionsTests";
+			sourceTree = "<group>";
+		};
+		038115AD20B65229007D5883 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				038115AE20B65229007D5883 /* UIImage+FBLAdditionsTests */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		038115AE20B65229007D5883 /* UIImage+FBLAdditionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				038115B520B65229007D5883 /* small.png */,
+				038115AF20B65229007D5883 /* small90.png */,
+				038115B020B65229007D5883 /* small180.png */,
+				038115B120B65229007D5883 /* small180FlippedHorizontally.png */,
+				038115B320B65229007D5883 /* smallFlippedHorizontally.png */,
+				038115B220B65229007D5883 /* smallFlippedVertically.png */,
+				038115B420B65229007D5883 /* smallMinus90.png */,
+			);
+			path = "UIImage+FBLAdditionsTests";
+			sourceTree = "<group>";
+		};
+		038115B620B65252007D5883 /* UIImage+FBLAdditionsTestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				038115B720B65252007D5883 /* include */,
+				038115B920B65252007D5883 /* UIImage+FBLAdditionsTestHelpers.m */,
+			);
+			name = "UIImage+FBLAdditionsTestHelpers";
+			path = "Sources/UIImage+FBLAdditionsTestHelpers";
+			sourceTree = "<group>";
+		};
+		038115B720B65252007D5883 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				038115B820B65252007D5883 /* UIImage+FBLAdditionsTestHelpers.h */,
+				038115CF20B65323007D5883 /* framework.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* UIImage+FBLAdditions.h */,
+				0371B5E920B3A74D00C75E5D /* framework.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"UIImage+FBLAdditions::UIImage+FBLAdditions::Product" /* UIImage_FBLAdditions.framework */,
+				038115C620B65296007D5883 /* UIImage_FBLAdditionsTestHelpers.framework */,
+				038115D720B6602F007D5883 /* UIImage_FBLAdditionsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_7 /* Sources */,
+				0371B5EA20B6514D00C75E5D /* Tests */,
+				038115AD20B65229007D5883 /* Resources */,
+				OBJ_19 /* Products */,
+				0371B5E020B3A68D00C75E5D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* UIImage+FBLAdditions */,
+				038115B620B65252007D5883 /* UIImage+FBLAdditionsTestHelpers */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* UIImage+FBLAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* UIImage+FBLAdditions.m */,
+				OBJ_10 /* include */,
+			);
+			name = "UIImage+FBLAdditions";
+			path = "Sources/UIImage+FBLAdditions";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0371B5E720B3A71100C75E5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0371B5E820B3A71700C75E5D /* UIImage+FBLAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038115C120B65296007D5883 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038115C820B652BA007D5883 /* UIImage+FBLAdditionsTestHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		038115BA20B65296007D5883 /* UIImage+FBLAdditionsTestHelpers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038115C320B65296007D5883 /* Build configuration list for PBXNativeTarget "UIImage+FBLAdditionsTestHelpers" */;
+			buildPhases = (
+				038115BB20B65296007D5883 /* Sources */,
+				038115BD20B65296007D5883 /* Frameworks */,
+				038115C120B65296007D5883 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				038115CE20B652F7007D5883 /* PBXTargetDependency */,
+			);
+			name = "UIImage+FBLAdditionsTestHelpers";
+			productName = UIImage_FBLAdditions;
+			productReference = 038115C620B65296007D5883 /* UIImage_FBLAdditionsTestHelpers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		038115D620B6602F007D5883 /* UIImage_FBLAdditionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038115DF20B66030007D5883 /* Build configuration list for PBXNativeTarget "UIImage_FBLAdditionsTests" */;
+			buildPhases = (
+				038115D320B6602F007D5883 /* Sources */,
+				038115D420B6602F007D5883 /* Frameworks */,
+				038115D520B6602F007D5883 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				038115DE20B66030007D5883 /* PBXTargetDependency */,
+			);
+			name = UIImage_FBLAdditionsTests;
+			productName = UIImage_FBLAdditionsTests;
+			productReference = 038115D720B6602F007D5883 /* UIImage_FBLAdditionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"UIImage+FBLAdditions::UIImage+FBLAdditions" /* UIImage+FBLAdditions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_22 /* Build configuration list for PBXNativeTarget "UIImage+FBLAdditions" */;
+			buildPhases = (
+				OBJ_25 /* Sources */,
+				OBJ_27 /* Frameworks */,
+				0371B5E720B3A71100C75E5D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIImage+FBLAdditions";
+			productName = UIImage_FBLAdditions;
+			productReference = "UIImage+FBLAdditions::UIImage+FBLAdditions::Product" /* UIImage_FBLAdditions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					038115D620B6602F007D5883 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "UIImage+FBLAdditions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"UIImage+FBLAdditions::UIImage+FBLAdditions" /* UIImage+FBLAdditions */,
+				038115BA20B65296007D5883 /* UIImage+FBLAdditionsTestHelpers */,
+				038115D620B6602F007D5883 /* UIImage_FBLAdditionsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		038115D520B6602F007D5883 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038115E820B66356007D5883 /* small180.png in Resources */,
+				038115E720B66356007D5883 /* small90.png in Resources */,
+				038115E620B66356007D5883 /* small.png in Resources */,
+				038115EA20B66356007D5883 /* smallFlippedHorizontally.png in Resources */,
+				038115EC20B66356007D5883 /* smallMinus90.png in Resources */,
+				038115E920B66356007D5883 /* small180FlippedHorizontally.png in Resources */,
+				038115EB20B66356007D5883 /* smallFlippedVertically.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		038115BB20B65296007D5883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				038115C920B652C0007D5883 /* UIImage+FBLAdditionsTestHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038115D320B6602F007D5883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038115E220B662F0007D5883 /* UIImage+FBLAdditionsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_26 /* UIImage+FBLAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		038115CE20B652F7007D5883 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "UIImage+FBLAdditions::UIImage+FBLAdditions" /* UIImage+FBLAdditions */;
+			targetProxy = 038115CD20B652F7007D5883 /* PBXContainerItemProxy */;
+		};
+		038115DE20B66030007D5883 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "UIImage+FBLAdditions::UIImage+FBLAdditions" /* UIImage+FBLAdditions */;
+			targetProxy = 038115DD20B66030007D5883 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		038115C420B65296007D5883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/UIImage+FBLAdditions/include",
+					"$(SRCROOT)/Sources/UIImage+FBLAdditionsTestHelpers/include",
+				);
+				INFOPLIST_FILE = "UIImage+FBLAdditions.xcodeproj/UIImage_FBLAdditionsTestHelpers_Info.plist";
+				MODULEMAP_FILE = "$(SRCROOT)/Sources/UIImage+FBLAdditionsTestHelpers/include/framework.modulemap";
+				OTHER_CFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "UIImage-FBLAdditionsTestHelpers";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = "UIImage+FBLAdditionsTestHelpers";
+			};
+			name = Debug;
+		};
+		038115C520B65296007D5883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/UIImage+FBLAdditions/include",
+					"$(SRCROOT)/Sources/UIImage+FBLAdditionsTestHelpers/include",
+				);
+				INFOPLIST_FILE = "UIImage+FBLAdditions.xcodeproj/UIImage_FBLAdditionsTestHelpers_Info.plist";
+				MODULEMAP_FILE = "$(SRCROOT)/Sources/UIImage+FBLAdditionsTestHelpers/include/framework.modulemap";
+				OTHER_CFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "UIImage-FBLAdditionsTestHelpers";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = "UIImage+FBLAdditionsTestHelpers";
+			};
+			name = Release;
+		};
+		038115E020B66030007D5883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/UIImage+FBLAdditions/include",
+					"$(SRCROOT)/Sources/UIImage+FBLAdditionsTestHelpers/include",
+				);
+				INFOPLIST_FILE = "UIImage+FBLAdditions.xcodeproj/UIImage_FBLAdditionsTests_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.$(PRODUCT_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = UIImage_FBLAdditionsTests;
+			};
+			name = Debug;
+		};
+		038115E120B66030007D5883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/UIImage+FBLAdditions/include",
+					"$(SRCROOT)/Sources/UIImage+FBLAdditionsTestHelpers/include",
+				);
+				INFOPLIST_FILE = "UIImage+FBLAdditions.xcodeproj/UIImage_FBLAdditionsTests_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.$(PRODUCT_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = UIImage_FBLAdditionsTests;
+			};
+			name = Release;
+		};
+		OBJ_23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/UIImage+FBLAdditions/include",
+				);
+				INFOPLIST_FILE = "UIImage+FBLAdditions.xcodeproj/UIImage_FBLAdditions_Info.plist";
+				MODULEMAP_FILE = "$(SRCROOT)/Sources/UIImage+FBLAdditions/include/framework.modulemap";
+				OTHER_CFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "UIImage-FBLAdditions";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = "UIImage+FBLAdditions";
+			};
+			name = Debug;
+		};
+		OBJ_24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/UIImage+FBLAdditions/include",
+				);
+				INFOPLIST_FILE = "UIImage+FBLAdditions.xcodeproj/UIImage_FBLAdditions_Info.plist";
+				MODULEMAP_FILE = "$(SRCROOT)/Sources/UIImage+FBLAdditions/include/framework.modulemap";
+				OTHER_CFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "UIImage-FBLAdditions";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = "UIImage+FBLAdditions";
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		038115C320B65296007D5883 /* Build configuration list for PBXNativeTarget "UIImage+FBLAdditionsTestHelpers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038115C420B65296007D5883 /* Debug */,
+				038115C520B65296007D5883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		038115DF20B66030007D5883 /* Build configuration list for PBXNativeTarget "UIImage_FBLAdditionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038115E020B66030007D5883 /* Debug */,
+				038115E120B66030007D5883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "UIImage+FBLAdditions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_22 /* Build configuration list for PBXNativeTarget "UIImage+FBLAdditions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_23 /* Debug */,
+				OBJ_24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
