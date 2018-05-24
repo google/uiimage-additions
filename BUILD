@@ -15,7 +15,7 @@ OBJC_COPTS = [
 ]
 
 objc_library(
-    name = "UIImage+FBLAdditions",
+    name = "UIImage_FBLAdditions",
     srcs = glob([
         "Sources/UIImage+FBLAdditions/*.m",
     ]),
@@ -32,7 +32,7 @@ objc_library(
 )
 
 objc_library(
-    name = "UIImage+FBLAdditionsTestHelpers",
+    name = "UIImage_FBLAdditionsTestHelpers",
     testonly = 1,
     srcs = glob([
         "Sources/UIImage+FBLAdditionsTestHelpers/*.m",
@@ -46,7 +46,7 @@ objc_library(
     ],
     module_map = "Sources/UIImage+FBLAdditionsTestHelpers/include/module.modulemap",
     deps = [
-        ":UIImage+FBLAdditions",
+        ":UIImage_FBLAdditions",
     ],
 )
 
@@ -55,12 +55,12 @@ ios_unit_test(
     minimum_os_version = "9.0",
     test_host = "@build_bazel_rules_apple//apple/testing/default_host/ios",
     deps = [
-        ":UIImage+FBLAdditionsTests",
+        ":UIImage_FBLAdditionsTests",
     ],
 )
 
 objc_library(
-    name = "UIImage+FBLAdditionsTests",
+    name = "UIImage_FBLAdditionsTests",
     testonly = 1,
     srcs = glob([
         "Tests/UIImage+FBLAdditionsTests/*.m",
@@ -75,7 +75,7 @@ objc_library(
         "UIKit",
     ],
     deps = [
-        ":UIImage+FBLAdditions",
-        ":UIImage+FBLAdditionsTestHelpers",
+        ":UIImage_FBLAdditions",
+        ":UIImage_FBLAdditionsTestHelpers",
     ],
 )
