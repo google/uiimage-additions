@@ -1,0 +1,21 @@
+This file contains a list of people who have made large contributions
+to the UIImage FBLAdditions project.
+
+Original design and implementation:
+  Andreea Berfield <aberfield@google.com>
+  Aaron Golden <aegolden@google.com>
+  Anthony Shoumikhin <anthony@shoumikh.in>
+  Brett Kilty <brettk@google.com>
+  Jeremy Ng <coolman2@google.com>
+  Deen Liu <deenliu@google.com>
+  Dylan Sturgeon <dylansturg@google.com>
+  Scott Hancher <seh@google.com>
+  Di Yan <ydi@google.com>
+
+Bug fixes, code review, and other contributions:
+  Jeremy Newton-Smith <jeremyns@google.com>
+  Jerome Miglino <jmig@google.com>
+  Jonathan Kim <jonathankim@google.com>
+  Stephen Vanterpool <stephen@vanterpool.net>
+  Kayla McArthur <klmcarthur@google.com>
+  Tristan Emrich <tristane@google.com>
